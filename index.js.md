@@ -2,7 +2,7 @@
 
 When you download an Observable notebook, you get a compressed folder of files. Several are basically the same for every notebook:
 
-- **index.html** loads everything else; it imports the notebook definition, [Runtime](https://github.com/observablehq/runtime), [Standard Library](https://github.com/observablehq/stdlib), and [Inspector](https://github.com/observablehq/inspector). It does not hold the main content of your notebook; is customized only with your title.
+- **index.html** loads everything else; it imports the notebook definition, [Runtime](https://github.com/observablehq/runtime), [Standard Library](https://github.com/observablehq/stdlib), and [Inspector](https://github.com/observablehq/inspector). It does not hold the main content of your notebook; it is customized only with your title.
 - **package.json** includes basic metadata about your notebook to make it an npm-installable package.
 - **runtime.js** includes a copy of the Runtime, Standard Library, and Inspector, so that your tarball is self-contained and runs without an Internet connection.
 - **index.js** is the default entry point for the notebook package, and just points to your main notebook definition.
